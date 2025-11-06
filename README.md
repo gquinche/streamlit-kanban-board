@@ -15,13 +15,9 @@ An advanced, interactive Kanban board component for Streamlit applications with 
 - **Customizable**: Extensive styling and layout options
 - **TypeScript**: Fully typed for better development experience
 
-## 📦 Installation
-
-```bash
-pip install streamlit-kanban-os
-```
-
 ## 🎯 Quick Start
+
+You can test the component live at: [https://gquinche-streamlit-kanban-boa-streamlit-kanban-osexample-p5sn1l.streamlit.app/](https://gquinche-streamlit-kanban-boa-streamlit-kanban-osexample-p5sn1l.streamlit.app/)
 
 ```python
 import streamlit as st
@@ -162,6 +158,8 @@ poetry install
 cd streamlit_kanban_os/src/frontend
 npm install
 
+# Test the frontend in case you want to modify it (Change deploy flag in init python file)
+npm run start
 # Build the frontend
 npm run build
 ```
@@ -171,9 +169,6 @@ npm run build
 ```bash
 # Build the package
 poetry build
-
-# Or install locally for testing
-pip install -e .
 ```
 
 ## 📄 License
@@ -196,4 +191,4 @@ If you encounter any issues or have questions:
 
 - Built with [Streamlit](https://streamlit.io/)
 - Frontend powered by [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
-- Using the ? symbol as OG streamlit from [React Feather](https://react-feather.dev/)
+- Using the ? symbol and pen to follow streamlit theming from [React Feather](https://react-feather.dev/)
