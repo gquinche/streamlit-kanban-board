@@ -1,0 +1,12 @@
+[server]
+enableStaticServing = true
+
+enableXsrfProtection = false
+[[theme.fontFaces]]
+family = "spartan"
+url = "app/static/spartan.ttf"
+style = "normal" 
+[theme]
+base = "dark"
+font = 'spartan'
+primaryColor="#995ec5"
