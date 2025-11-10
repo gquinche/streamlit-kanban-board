@@ -1,12 +1,20 @@
 [server]
 enableStaticServing = true
-
 enableXsrfProtection = false
 [[theme.fontFaces]]
 family = "spartan"
 url = "app/static/spartan.ttf"
 style = "normal" 
+[[theme.fontFaces]]
+family="noto-sans"
+url="app/static/NotoSans-Italic.ttf"
+style="italic"
+[[theme.fontFaces]]
+family="noto-sans"
+url="app/static/NotoSans.ttf"
+style="normal"
 [theme]
-base = "dark"
-font = 'spartan'
+base = "light"
+font = "spartan"
+codeFont = "noto-sans"
 primaryColor="#995ec5"

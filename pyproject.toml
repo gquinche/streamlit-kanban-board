@@ -1,6 +1,6 @@
 [project]
 name = "streamlit-kanban-os"
-version = "0.2.0-dev"
+version = "0.4.0-dev"
 description = "An advanced Kanban board component for Streamlit with main column support"
 authors = [
     {name = "Gabriel Quinche",email = "gabrielquinche@hotmail.com"}

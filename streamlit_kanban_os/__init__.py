@@ -1,7 +1,7 @@
 import streamlit.components.v1 as components
 import os
 
-__version__ = "0.2.0-dev"
+__version__ = "0.4.0-dev"
 
 _RELEASE = True
 
@@ -24,7 +24,7 @@ def kanban_board(columns,
                  horizontal: bool = False,
                  gap: str = 'medium',
                  width: str | int = 'stretch',
-                 height: str | int = 'stretch',
+                 height: str | int = 500,
                  border: bool = False,
                  min_width: str | int | None = None,
                  min_height: str | int | None = None,
@@ -36,6 +36,7 @@ def kanban_board(columns,
                  rename_categories: str = 'none', # 'none', 'new_only', 'all'
                  new_category_title: str = 'New Category',
                  key=None,
+                 font_file_name: str = ''
                  ):
     """Create a kanban board component.
 
@@ -95,8 +96,8 @@ def kanban_board(columns,
         vertical_alignment=vertical_alignment,
         horizontal=horizontal,
         gap=gap,
-        width='stretch',
-        height='500',
+        width=width,
+        height=height,
         border=border,
         minWidth=min_width,
         minHeight=min_height,
@@ -107,6 +108,6 @@ def kanban_board(columns,
         allowNewCategories=allow_new_categories,
         renameCategories=rename_categories,
         newCategoryTitle=new_category_title,
-        # debug_font=debug_font,
-        # font_file_name='http://localhost:4117/app/static/trash.ttf'
+        debug_font=debug_font,
+        font_file_name=font_file_name
     )
